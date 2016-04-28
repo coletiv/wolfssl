@@ -6,6 +6,7 @@
 #define WOLFSSL_SHA512
 #define WOLFSSL_SHA384
 #define DEBUG_WOLFSSL
+#define OPENSSL_EXTRA
 //#define NO_WOLFSSL_SERVER
 #define SINGLE_THREADED
 
