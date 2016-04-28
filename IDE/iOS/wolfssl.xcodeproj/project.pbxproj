@@ -1698,6 +1698,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+					armv7s,
+				);
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				DSTROOT = /tmp/wolfssl_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -1719,6 +1725,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "wolfssl/wolfcrypt wolfssl";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Debug;
 		};
@@ -1726,6 +1733,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = (
+					"$(ARCHS_STANDARD)",
+					i386,
+					x86_64,
+					armv7s,
+				);
 				CLANG_LINK_OBJC_RUNTIME = NO;
 				DSTROOT = /tmp/wolfssl_ios.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
@@ -1744,6 +1757,7 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "wolfssl/wolfcrypt wolfssl";
+				VALID_ARCHS = "arm64 armv7 armv7s x86_64 i386";
 			};
 			name = Release;
 		};
